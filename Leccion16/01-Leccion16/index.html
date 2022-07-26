@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id="cabecero">Ejemplo DOM con JavaScript</h1>
+    <p id="parrafo"> Saludos!</p>
+    <p id="parrafo2"> Otro Saludo para DOM</p>
+
+    <!-- EL script debe estar despues de los arhivos
+    que quemos manipular -->
+    <script>
+        // inner significa interno
+        let cabecero = document.getElementById("cabecero");
+        let saludo = document.getElementById("parrafo");
+        let parrafo = document.getElementById("parrafo2");
+        console.log("valor cabecero: "+cabecero.innerHTML)
+        console.log("valor de parrafo --> "+saludo.innerHTML);
+        console.log(`valor de 2do parrafo --> ${parrafo.innerHTML}`);
+
+        cabecero.innerHTML = "Nuevo Cabecero";
+        parrafo.innerHTML = "Nuevo valor para el parrafo!!";
+        console.log("Saludos desde Javascript")
+    </script>
+    
+</body>
+</html>
